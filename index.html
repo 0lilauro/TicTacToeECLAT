@@ -14,64 +14,73 @@
     <script type="text/javascript" src="./script/script.js"></script>
 </head>
 <body>
-    <div class="text-center mt-5">
+    <div class="text-center mt-1 ">
         <h1 class="center">Jogo da Velha</h1>
         <h2 class="center">Usando Sistema de Recomendação ECLAT</h2>
+        <h3 id="score" class="center mb-4">(Máquina) 0 X 0 (Humano)</h3>
     </div>
-    <main class="row center">    
-        <div class="main">
-            <div class="row">
-                <div class="column line-right">
-                    <div class="cell" id="C00" onclick="playerClick('B00', 0, 0)">
-                    <span class="pedra" id="B00"></span>
+    <div class="d-block align-center center">
+        <main class="row">    
+            <div class="main">
+                <div class="row">
+                    <div class="column line-right">
+                        <div class="cell" id="C00" onclick="playerClick('B00', 0, 0)">
+                        <span class="pedra" id="B00"></span>
+                        </div>
+                    </div>
+                    <div class="column line-right">
+                        <div class="cell" id="C01" onclick="playerClick('B01', 0, 1)">
+                        <span class="pedra" id="B01"></span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="cell" id="C02" onclick="playerClick('B02', 0, 2)">
+                        <span class="pedra" id="B02"></span>
+                        </div>
                     </div>
                 </div>
-                <div class="column line-right">
-                    <div class="cell" id="C01" onclick="playerClick('B01', 0, 1)">
-                    <span class="pedra" id="B01"></span>
+                <div class="row line-top">
+                    <div class="column">
+                        <div class="cell" id="C10" onclick="playerClick('B10', 1, 0)">
+                        <span class="pedra" id="B10"></span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="cell" id="C11" onclick="playerClick('B11', 1, 1)">
+                        <span class="pedra" id="B11"></span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="cell" id="C12" onclick="playerClick('B12', 1, 2)">
+                        <span class="pedra" id="B12"></span>
+                        </div>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="cell" id="C02" onclick="playerClick('B02', 0, 2)">
-                    <span class="pedra" id="B02"></span>
+                <div class="row line-top">
+                    <div class="column">
+                        <div class="cell" id="C20" onclick="playerClick('B20', 2, 0)">
+                        <span class="pedra" id="B20"></span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="cell" id="C21" onclick="playerClick('B21', 2, 1)">
+                        <span class="pedra" id="B21"></span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="cell" id="C22" onclick="playerClick('B22', 2, 2)">
+                        <span class="pedra" id="B22"></span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row line-top">
-                <div class="column">
-                    <div class="cell" id="C10" onclick="playerClick('B10', 1, 0)">
-                    <span class="pedra" id="B10"></span>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="cell" id="C11" onclick="playerClick('B11', 1, 1)">
-                    <span class="pedra" id="B11"></span>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="cell" id="C12" onclick="playerClick('B12', 1, 2)">
-                    <span class="pedra" id="B12"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="row line-top">
-                <div class="column">
-                    <div class="cell" id="C20" onclick="playerClick('B20', 2, 0)">
-                    <span class="pedra" id="B20"></span>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="cell" id="C21" onclick="playerClick('B21', 2, 1)">
-                    <span class="pedra" id="B21"></span>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="cell" id="C22" onclick="playerClick('B22', 2, 2)">
-                    <span class="pedra" id="B22"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+        </main>
+    </div>
+    <div class="text-center">
+        <button id="restart-button" onclick="runGame()" type="button" class="btn btn-success">Restart Game</button>
+    </div>
+    <div id="referencias" class="text-center mt-4">
+        <p>By: <a href="https://www.linkedin.com/in/laurocoliveira/">Lauro Oliveira</a></p>
+    </div>
 </body>
 </html>
